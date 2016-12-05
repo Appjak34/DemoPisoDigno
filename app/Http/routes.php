@@ -19,3 +19,4 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 Route::resource('/Municipios','MunicipioController');
+Route::post('/Municipios/autocomplete', ['as'=>'Municipio.buscar', 'uses' => 'MunicipioController@autocomplete']);

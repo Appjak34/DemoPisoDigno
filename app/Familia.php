@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Familia extends Model
 {
+  public $timestamps = false;
   protected $table = 'familias';
   protected $fillable = [
       'Nombre','id_Municipios',
