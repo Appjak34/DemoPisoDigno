@@ -11,5 +11,9 @@ class Municipio extends Model
   protected $fillable = [
       'id_municipios','Nombre',
   ];
+  public function familias()
+     {
+         return $this->hasMany('App\Familia','id_Municipios','id_municipios');
 
+     }
 }
